@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI-Django Combo</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.name }} | <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a>
+    {% endif %}
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
