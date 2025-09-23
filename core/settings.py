@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'blog',
+    'contact',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'   # tell Django to use our model
